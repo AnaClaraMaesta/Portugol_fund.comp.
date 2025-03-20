@@ -14,11 +14,11 @@ programa {
 
     valorConta = (consumoMensal * precoKwh)
 
-    se (consumoPessoa <= 100){
+    se (consumoPessoa < 100){
       escreva("Parabens você ganhou desconto de 15%, o valor da sua conta foi de: R$ ", valorConta * 0.15, "\n")
-    }senao se(consumoPessoa > 300) {
+    }senao se(consumoPessoa >= 300) {
       escreva("Devido ao consumo superar 300kwh você recebeu uma taxa de 50 reais, o valor da sua conta foi de: R$ ", valorConta + 50.00,"\n")
-    } senao se(consumoPessoa > 100 e consumoPessoa < 299.9){
+    } senao se(consumoPessoa >= 100 e consumoPessoa <= 299.9){
       escreva("O valor da sua conta foi de: R$ ", valorConta,"\n")
     }
 
