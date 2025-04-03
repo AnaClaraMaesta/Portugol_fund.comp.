@@ -3,13 +3,14 @@ programa
 	
 	funcao inicio()
 	{
-		inteiro passo = 0
+		inteiro passo
+		inteiro produto = 1
 			
-		para(passo;passo<20;passo++){
+		para(passo = 0;passo<20;passo++){
 			se(passo%2 == 1){
-				escreva("\n",passo)
-				}
+						produto = produto*passo
 			}
+				}escreva("Resultado: ",produto)
 	}
 }
 /* $$$ Portugol Studio $$$ 
